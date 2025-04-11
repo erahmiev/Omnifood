@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../styles/global.css" />
+    <link rel="stylesheet" href="../../../styles/lehrbuch-a1-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>A1 3.3 Konjugationsübungen und Satzbildung</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../../img/favicon-96x96.png"
+      sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../../../img/favicon.svg" />
+    <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../../img/apple-touch-icon.png" />
+    <link rel="manifest" href="../../../img/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-auto">
+        <nav class="sidebar-nav">
+          <li><a href="../../index-a1.html">A1</a></li>
+          <li><a href="../../../A2/index-a2.html">A2</a></li>
+          <li><a href="">B1</a></li>
+          <li><a href="">B2</a></li>
+          <li><a href="">C1</a></li>
+        </nav>
+      </div>
+    </div>
+    <div class="text-container">
+      <h4>🧩 Übung 1: Lückentext</h4>
+      <p>Setze das Verb in der richtigen Form ein (Präsens):</p>
+      <p>
+        1. Ich <input type="text" class="rectangle" /> (machen) jeden Tag Sport.
+      </p>
+      <p>
+        2. Du <input type="text" class="rectangle" /> (sehen) den Film heute
+        Abend.
+      </p>
+      <p>3. Er <input type="text" class="rectangle" /> (spielen) Gitarre.</p>
+      <p>4. Wir <input type="text" class="rectangle" /> (lernen) Deutsch.</p>
+      <p>
+        5. Ihr <input type="text" class="rectangle" /> (fahren) mit dem Fahrrad.
+      </p>
+      <p>
+        6. Sie <input type="text" class="rectangle" /> (sprechen) gut Englisch.
+      </p>
+    </div>
+    <div class="text-container">
+      <h4>🎯 Übung 2: Mehrfachauswahl</h4>
+      <p>Wähle die richtige Form:</p>
+      <form class="bullet-free final-test final-li konjugation">
+        <p>1. Was passt → du (sehen)</p>
+        <label for="sehe">sehe</label>
+        <input
+          type="radio"
+          id="sehe"
+          value="sehe"
+          name="mehfausw-1"
+          class="mb-5" />
+        <label for="siehst">siehst</label>
+        <input
+          type="radio"
+          id="siehst"
+          value="siehst"
+          name="mehfausw-1"
+          class="mb-5" />
+        <p>2. Was passt? → wir (machen)</p>
+        <label for="machen">machen</label>
+        <input
+          type="radio"
+          id="machen"
+          value="machen"
+          name="mehfausw-2"
+          class="mb-5" />
+        <label for="machst">machst</label>
+        <input
+          type="radio"
+          id="machst"
+          value="machst"
+          name="mehfausw-2"
+          class="mb-5" />
+        <p>3. Was passt? → er (sprechen)</p>
+        <label for="spricht">spricht</label>
+        <input
+          type="radio"
+          id="spricht"
+          value="spricht"
+          name="mehfausw-3"
+          class="mb-5" />
+        <label for="sprecht">sprecht</label>
+        <input type="radio" id="sprecht" value="sprecht" name="mehfausw-3" />
+      </form>
+    </div>
+    <div class="text-container">
+      <h4>🔗 Übung 3: Zuordnung (Drag & Drop)</h4>
+      <table border="1">
+        <caption>
+          🔗 Zuordnungsübung: Wer macht was?
+        </caption>
+        <thead>
+          <tr>
+            <th>Verbform</th>
+            <th>Person</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>sehe</td>
+            <td>ich</td>
+          </tr>
+          <tr>
+            <td>siehst</td>
+            <td>du</td>
+          </tr>
+          <tr>
+            <td>macht</td>
+            <td>er/sie/es</td>
+          </tr>
+          <tr>
+            <td>lernen</td>
+            <td>wir</td>
+          </tr>
+          <tr>
+            <td>fahrt</td>
+            <td>ihr</td>
+          </tr>
+          <tr>
+            <td>sprechen</td>
+            <td>sie / Sie</td>
+          </tr>
+        </tbody>
+      </table>
+      <p draggable="true" ondragstart="drag(event)">Draggable</p>
+      <div
+        class="rectangle-draggable"
+        id="ziel"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"></div>
+    </div>
+    <p class="button-container">
+      <a
+        href="../../Übungen/Kapitel 2/k2-a1-grammatik.html"
+        class="btn btn-primary"
+        >Übungen</a
+      >
+      <a href="" class="btn btn-primary">Wortschatz</a>
+    </p>
+  </body>
+  <script src="../../../scripts/drag-and-drop.js"></script>
+</html>
